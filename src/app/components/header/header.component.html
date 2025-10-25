@@ -1,0 +1,22 @@
+<!-- <header class="header">
+  <nav>
+    <a routerLink="/">Dashboard</a>
+    <a routerLink="/shop">Shop</a>
+    <a routerLink="/cart">Cart</a>
+    <a routerLink="/checkout">Checkout
+      <span class="cart-count" *ngIf="cartService.getCount() > 0">
+        {{ cartService.getCount() }}
+      </span>
+    </a>
+  </nav>
+</header> -->
+
+<nav class="navbar">
+  <a routerLink="/">Ecolastic</a>
+  <div>
+    <a routerLink="/shop">Shop</a>
+    <a routerLink="/cart">Cart ({{ cartService.getCartCount() }})</a>
+    <a routerLink="/checkout">Checkout</a>
+  </div>
+</nav>
+<hr />

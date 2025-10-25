@@ -1,0 +1,42 @@
+.product {
+  padding: 2rem;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  padding: 1rem;
+  margin: 15px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.product-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+button {
+  background: #2e8b57;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 30px;
+  margin-top: 35px;
+}
+button:hover {
+  background: #246b45;
+}
+
+.mr {
+ margin-left: 375px;
+ font-weight: bold;
+}
+
+.ml {
+ margin-left: 575px;
+ font-weight: bold;
+}

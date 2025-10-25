@@ -1,0 +1,15 @@
+<div>
+  <p class="mr">I am here to represent my products, you can buy our eco-products with trust, hope you like our products...</p>
+  <p class="ml">Thank you for shopping with us, visit again...</p>
+
+  <div class="product">
+    <div class="card" *ngFor="let p of products">
+      <div>
+        <img [src]="p.image" [alt]="p.name" class="product-image">
+        <h3>{{ p.name }}</h3>
+        <p>₹{{ p.price }}</p>
+      </div>
+      <button (click)="addToCart(p)">Add to Cart</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="checkout-container" *ngIf="cart.length > 0; else emptyCart">
+  <h2>Checkout</h2>
+  <form (ngSubmit)="confirmOrder()">
+    <label>
+      Name:
+      <input type="text" [(ngModel)]="name" name="name" required>
+    </label>
+    <label>
+      Email:
+      <input type="email" [(ngModel)]="email" name="email" required>
+    </label>
+    <label>
+      Mobile:
+      <input type="number" [(ngModel)]="mobile" name="mobile" required>
+    </label>
+    <label>
+      Address:
+      <textarea [(ngModel)]="address" name="address" required></textarea>
+    </label>
+
+    <h3>Cart Summary</h3>
+    <ul>
+      <li *ngFor="let item of cart">{{ item.name }} - ₹{{ item.price }}</li>
+    </ul>
+    <h3>Total: ₹{{ cartService.getTotal() }}</h3>
+
+    <button type="submit">Confirm Order</button>
+  </form>
+</div>
+
+<ng-template #emptyCart>
+  <p>Your cart is empty. <a routerLink="/shop">Go shopping</a></p>
+</ng-template>

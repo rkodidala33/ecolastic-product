@@ -1,0 +1,86 @@
+.dashboard-container {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333; /* Dark text for readability */
+}
+
+/* Headings */
+.dashboard-container h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.about-matter {
+  max-width: 800px;
+  text-align: justify;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-matter h2 {
+  margin-top: 25px;
+  font-size: 1.5rem;
+  text-align: left;
+  color: #2e7d32;
+}
+
+.about-matter ul {
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Image above button, full width of container */
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.dashboard-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Shop Now button */
+.shop-now-btn {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #2e7d32;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.shop-now-btn:hover {
+  background-color: #1b5e20;
+  transform: scale(1.05);
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .dashboard-container h1 {
+    font-size: 2.2rem;
+  }
+  .about-matter {
+    font-size: 1rem;
+    max-width: 95%;
+  }
+  .about-matter h2 {
+    font-size: 1.3rem;
+  }
+  .shop-now-btn {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+}
